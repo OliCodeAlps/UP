@@ -1,0 +1,1121 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('0321ec49-8e2c-4cad-a35f-6ca60bcc2c6d')/settings(settingDefinitions())",
+    "@odata.count": 10,
+    "value": [
+        {
+            "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "DiagnosticData",
+                        "Send required and optional diagnostic data about browser usage",
+                        "\\Microsoft Edge",
+                        "Microsoft Edge"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev86.1~Policy~microsoft_edge/DiagnosticData",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata",
+                    "categoryId": "a25a7a02-4bac-411b-9d02-10cb3297cb17",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_diagnosticdata",
+                    "description": "",
+                    "helpText": "",
+                    "name": "DiagnosticData",
+                    "displayName": "Send required and optional diagnostic data about browser usage (Device)",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_diagnosticdata_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_diagnosticdata_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Off (Not recommended)",
+                            "displayName": "Off (Not recommended)",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "0"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_diagnosticdata_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Required data",
+                            "displayName": "Required data",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "1"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_diagnosticdata_2",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Optional data",
+                            "displayName": "Optional data",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "2"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "DiagnosticData",
+                        "Send required and optional diagnostic data about browser usage",
+                        "\\Microsoft Edge",
+                        "Microsoft Edge"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/microsoft_edgev86.1~Policy~microsoft_edge/DiagnosticData",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata",
+                    "categoryId": "a25a7a02-4bac-411b-9d02-10cb3297cb17",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata",
+                    "description": "This policy controls sending required and optional diagnostic data about browser usage to Microsoft.\r\n\r\nRequired diagnostic data is collected to keep Microsoft Edge secure, up to date and performing as expected.\r\n\r\nOptional diagnostic data includes data about how you use the browser, websites you visit and crash reports to Microsoft for product and service improvement.\r\n\r\nUp to version 121, this policy is not supported on Windows 10 devices. To control this data collection on Windows 10 for 121 and previous, IT admins must use the Windows diagnostic data group policy. This policy will either be 'Allow Telemetry' or 'Allow Diagnostic Data', depending on the version of Windows. Learn more about Windows 10 diagnostic data collection: https://go.microsoft.com/fwlink/?linkid=2099569\r\n\r\nFor version 122 and later, this policy is supported on Windows 10 devices to allow controlling Microsoft Edge data collection separately from Windows 10 diagnostics data collection.\r\n\r\nUse one of the following settings to configure this policy:\r\n\r\n'Off' turns off required and optional diagnostic data collection. This option is not recommended.\r\n\r\n'RequiredData' sends required diagnostic data but turns off optional diagnostic data collection. Microsoft Edge will send required diagnostic data to keep Microsoft Edge secure, up to date and performing as expected.\r\n\r\n'OptionalData' sends optional diagnostic data includes data about browser usage, websites that are visited, crash reports sent to Microsoft for product and service improvement.\r\n\r\nOn Windows 7/macOS, this policy controls sending required and optional data to Microsoft.\r\n\r\nIf you don't configure this policy or disable it, Microsoft Edge will default to the user's preference.\r\n\r\nPolicy options mapping:\r\n\r\n* Off (0) = Off (Not recommended)\r\n\r\n* RequiredData (1) = Required data\r\n\r\n* OptionalData (2) = Optional data\r\n\r\nUse the preceding information when configuring this policy.",
+                    "helpText": "",
+                    "name": "DiagnosticData",
+                    "displayName": "Send required and optional diagnostic data about browser usage",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": null,
+                        "windowsSkus": [],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_microsoft_edgev86.1~policy~microsoft_edge_diagnosticdata_diagnosticdata",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_allowdevicenameindiagnosticdata",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_allowdevicenameindiagnosticdata_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "AllowDeviceNameInDiagnosticData",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#allowdevicenameindiagnosticdata"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/AllowDeviceNameInDiagnosticData",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_allowdevicenameindiagnosticdata",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_allowdevicenameindiagnosticdata",
+                    "description": "This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data.  If you disable or do not configure this policy setting, then device name will not be sent to Microsoft as part of Windows diagnostic data.",
+                    "helpText": "",
+                    "name": "AllowDeviceNameInDiagnosticData",
+                    "displayName": "Allow device name to be sent in Windows diagnostic data",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_allowdevicenameindiagnosticdata_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "8.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.17763",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "holographicForBusiness",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_allowdevicenameindiagnosticdata_0",
+                            "description": "Disabled.",
+                            "helpText": null,
+                            "name": "Disabled.",
+                            "displayName": "Disabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_allowdevicenameindiagnosticdata_1",
+                            "description": "Allowed.",
+                            "helpText": null,
+                            "name": "Allowed.",
+                            "displayName": "Allowed.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_allowtelemetry",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_allowtelemetry_3",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Allow Telemetry",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#allowtelemetry"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/AllowTelemetry",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_allowtelemetry",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_allowtelemetry",
+                    "description": "Allow the device to send diagnostic and usage telemetry data, such as Watson. For more information about diagnostic data for Windows, including what is and what is not collected by Windows, see Configure Windows diagnostic data in your organization. Note: This value is only applicable to Windows Enterprise, Windows Education, Windows Mobile Enterprise, Windows IoT Core (IoT Core), Windows Server 2016, and Windows CPC OS. The following tables describe the supported values:Windows 8. 1 Values:0 - Not allowed. 1 - Allowed, except for Secondary Data Requests. 2 (default) - Allowed. Windows 10 Values:0 - Security. Information that is required to help keep Windows or Windows CPC OS more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender. Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows IoT Core (IoT Core), Windows Server 2016, and Windows CPC OS. Using this setting on other devices is equivalent to setting the value of 1. 1 - Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level. 2 - Enhanced. Additional insights, including: how Windows, Windows Server, System Center, Windows CPC OS, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels. 3 - Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels. Important lf you are using Windows 8. 1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1. Most restricted value is 0.",
+                    "helpText": "",
+                    "name": "AllowTelemetry",
+                    "displayName": "Allow Telemetry",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_allowtelemetry_1",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "1.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.10240",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "holographicForBusiness",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_allowtelemetry_0",
+                            "description": "Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.\nNote: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.",
+                            "helpText": null,
+                            "name": "Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.\nNote: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.",
+                            "displayName": "Security",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_allowtelemetry_1",
+                            "description": "Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.",
+                            "helpText": null,
+                            "name": "Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.",
+                            "displayName": "Basic",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_allowtelemetry_3",
+                            "description": "Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.",
+                            "helpText": null,
+                            "name": "Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.",
+                            "displayName": "Full",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 3
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Configure Telemetry Opt In Change Notification",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#configuretelemetryoptinchangenotification"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/ConfigureTelemetryOptInChangeNotification",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification",
+                    "description": "",
+                    "helpText": "",
+                    "name": "ConfigureTelemetryOptInChangeNotification",
+                    "displayName": "Configure Telemetry Opt In Change Notification",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "7.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.17134",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification_0",
+                            "description": "Enable telemetry change notifications.",
+                            "helpText": null,
+                            "name": "Enable telemetry change notifications.",
+                            "displayName": "Enable telemetry change notifications.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_configuretelemetryoptinchangenotification_1",
+                            "description": "Disable telemetry change notifications.",
+                            "helpText": null,
+                            "name": "Disable telemetry change notifications.",
+                            "displayName": "Disable telemetry change notifications.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Configure Telemetry Opt In Settings Ux",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#configuretelemetryoptinsettingsux"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/ConfigureTelemetryOptInSettingsUx",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux",
+                    "description": "",
+                    "helpText": "",
+                    "name": "ConfigureTelemetryOptInSettingsUx",
+                    "displayName": "Configure Telemetry Opt In Settings Ux",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "7.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.17134",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "holographicForBusiness",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux_0",
+                            "description": "Enable Telemetry opt-in Settings.",
+                            "helpText": null,
+                            "name": "Enable Telemetry opt-in Settings.",
+                            "displayName": "Enable Telemetry opt-in Settings.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_configuretelemetryoptinsettingsux_1",
+                            "description": "Disable Telemetry opt-in Settings.",
+                            "helpText": null,
+                            "name": "Disable Telemetry opt-in Settings.",
+                            "displayName": "Disable Telemetry opt-in Settings.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_disableonesettingsdownloads",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_disableonesettingsdownloads_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Disable One Settings Downloads",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#disableonesettingsdownloads"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/DisableOneSettingsDownloads",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_disableonesettingsdownloads",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_disableonesettingsdownloads",
+                    "description": "This policy setting controls whether Windows attempts to connect with the OneSettings service.                             If you enable this policy, Windows will not attempt to connect with the OneSettings Service.                             If you disable or don't configure this policy setting, Windows will periodically attempt to connect with the OneSettings service to download configuration settings.",
+                    "helpText": "",
+                    "name": "DisableOneSettingsDownloads",
+                    "displayName": "Disable One Settings Downloads",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_disableonesettingsdownloads_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22000",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_disableonesettingsdownloads_0",
+                            "description": "Not disabled.",
+                            "helpText": null,
+                            "name": "Not disabled.",
+                            "displayName": "Not disabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_disableonesettingsdownloads_1",
+                            "description": "Disabled.",
+                            "helpText": null,
+                            "name": "Disabled.",
+                            "displayName": "Disabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_enableonesettingsauditing",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_enableonesettingsauditing_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Enable One Settings Auditing",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#enableonesettingsauditing"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/EnableOneSettingsAuditing",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_enableonesettingsauditing",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_enableonesettingsauditing",
+                    "description": "This policy setting controls whether Windows records attempts to connect with the OneSettings service to the EventLog.                             If you enable this policy, Windows will record attempts to connect with the OneSettings service to the Microsoft\\Windows\\Privacy-Auditing\\Operational EventLog channel.                             If you disable or don't configure this policy setting, Windows will not record attempts to connect with the OneSettings service to the EventLog.",
+                    "helpText": "",
+                    "name": "EnableOneSettingsAuditing",
+                    "displayName": "Enable One Settings Auditing",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_enableonesettingsauditing_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22000",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_enableonesettingsauditing_0",
+                            "description": "Disabled.",
+                            "helpText": null,
+                            "name": "Disabled.",
+                            "displayName": "Disabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_enableonesettingsauditing_1",
+                            "description": "Enabled.",
+                            "helpText": null,
+                            "name": "Enabled.",
+                            "displayName": "Enabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Limit Diagnostic Log Collection",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#limitdiagnosticlogcollection"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/LimitDiagnosticLogCollection",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection",
+                    "description": "This policy setting specifies whether diagnostic log data can be collected when more information is needed to troubleshoot a problem. The diagnostic data logs are collected, only if we have permission to collect optional diagnostic data, and only if the device meets the criteria for additional data collection.                     If you disable or do not configure this policy setting, we may occasionally collect advanced diagnostic data if the user has opted to send optional diagnostic data.",
+                    "helpText": "",
+                    "name": "LimitDiagnosticLogCollection",
+                    "displayName": "Limit Diagnostic Log Collection",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22000",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection_0",
+                            "description": "Disabled.",
+                            "helpText": null,
+                            "name": "Disabled.",
+                            "displayName": "Disabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_limitdiagnosticlogcollection_1",
+                            "description": "Enabled.",
+                            "helpText": null,
+                            "name": "Enabled.",
+                            "displayName": "Enabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_limitdumpcollection",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_limitdumpcollection_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Limit Dump Collection",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#limitdumpcollection"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/LimitDumpCollection",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_limitdumpcollection",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_limitdumpcollection",
+                    "description": "This policy setting limits the type of dumps that can be collected when more information is needed to troubleshoot a problem. These dumps are not sent unless we have permission to collect optional diagnostic data.                             By enabling this policy setting, Windows Error Reporting is limited to sending kernel mini dumps and user mode triage dumps only.                             If you disable or do not configure this policy setting, we may occasionally collect full or heap dumps if the user has opted to send optional diagnostic data.",
+                    "helpText": "",
+                    "name": "LimitDumpCollection",
+                    "displayName": "Limit Dump Collection",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_limitdumpcollection_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22000",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_limitdumpcollection_0",
+                            "description": "Disabled.",
+                            "helpText": null,
+                            "name": "Disabled.",
+                            "displayName": "Disabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_limitdumpcollection_1",
+                            "description": "Enabled.",
+                            "helpText": null,
+                            "name": "Enabled.",
+                            "displayName": "Enabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Limit Enhanced Diagnostic Data Windows Analytics",
+                        "System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-System#limitenhanceddiagnosticdatawindowsanalytics"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/System/LimitEnhancedDiagnosticDataWindowsAnalytics",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics",
+                    "categoryId": "f62e0f2a-4363-4246-8057-1dc811fe4360",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics",
+                    "description": "This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. By configuring this setting, you're not stopping people from changing their Telemetry Settings; however, you are stopping them from choosing a higher level than you've set for the organization. To enable this behavior, you must complete two steps: 1. Enable this policy setting 2. Set Allow Telemetry to level 2 (Enhanced).If you configure these policy settings together, you'll send the\u00A0Basic level of diagnostic data plus any additional events that are required for Windows Analytics, to Microsoft. The additional events are documented here: https://go.Microsoft.com/fwlink/?linked=847594. If you enable Enhanced diagnostic data in the Allow Telemetry policy setting, but you don't configure this policy setting, you'll send the required events for Windows Analytics, plus any additional Enhanced level telemetry data to Microsoft. This setting has no effect on computers configured to send Full, Basic, or Security level diagnostic data to Microsoft. If you disable or don't configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the Allow Telemetry policy setting.",
+                    "helpText": "",
+                    "name": "LimitEnhancedDiagnosticDataWindowsAnalytics",
+                    "displayName": "Limit Enhanced Diagnostic Data Windows Analytics",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "6.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.16299",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval",
+                            "windowsCPC"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics_0",
+                            "description": "Disabled.",
+                            "helpText": null,
+                            "name": "Disabled.",
+                            "displayName": "Disabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_system_limitenhanceddiagnosticdatawindowsanalytics_1",
+                            "description": "Enabled.",
+                            "helpText": null,
+                            "name": "Enabled.",
+                            "displayName": "Enabled.",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
