@@ -1,0 +1,615 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('5d26dd1e-ac02-4e03-a77e-5d8cc35bdac1')/settings(settingDefinitions())",
+    "@odata.count": 5,
+    "value": [
+        {
+            "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_enablesmartscreendropdown",
+                            "settingInstanceTemplateReference": null,
+                            "auditRuleInformation": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_enablesmartscreendropdown_block",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "EnableSmartScreen",
+                        "Configure Windows Defender SmartScreen",
+                        "\\Windows Components\\File Explorer",
+                        "Administrative Templates\\Windows Components\\File Explorer",
+                        "File Explorer",
+                        "Machine",
+                        "Software\\Policies\\Microsoft\\Windows\\System"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-admx-windowsexplorer#admx-windowsexplorer-enablesmartscreen"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/ADMX_WindowsExplorer/EnableSmartScreen",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen",
+                    "categoryId": "35525ba9-da99-460e-afd3-ba86506b0ba3",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen",
+                    "description": "This policy allows you to turn Windows Defender SmartScreen on or off.  SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet.  This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious.  No dialog is shown for apps that do not appear to be suspicious.\r\n\r\nSome information is sent to Microsoft about files and programs run on PCs with this feature enabled.\r\n\r\nIf you enable this policy, SmartScreen will be turned on for all users.  Its behavior can be controlled by the following options:\r\n\r\n• Warn and prevent bypass\r\n• Warn\r\n\r\nIf you enable this policy with the \"Warn and prevent bypass\" option, SmartScreen's dialogs will not present the user with the option to disregard the warning and run the app.  SmartScreen will continue to show the warning on subsequent attempts to run the app.\r\n\r\nIf you enable this policy with the \"Warn\" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway.  SmartScreen will not warn the user again for that app if the user tells SmartScreen to run the app.\r\n\r\nIf you disable this policy, SmartScreen will be turned off for all users.  Users will not be warned if they try to run suspicious apps from the Internet.\r\n\r\nIf you do not configure this policy, SmartScreen will be enabled by default, but users may change their settings.\r\n      \r\n ",
+                    "helpText": "",
+                    "name": "EnableSmartScreen",
+                    "displayName": "Configure Windows Defender SmartScreen",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "10.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.19041.1202",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "holographicForBusiness",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_enablesmartscreendropdown",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "EnableSmartScreen",
+                        "Configure Windows Defender SmartScreen",
+                        "\\Windows Components\\File Explorer",
+                        "Administrative Templates\\Windows Components\\File Explorer",
+                        "File Explorer"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/ADMX_WindowsExplorer/EnableSmartScreen",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen",
+                    "categoryId": "35525ba9-da99-460e-afd3-ba86506b0ba3",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_enablesmartscreendropdown",
+                    "description": null,
+                    "helpText": "",
+                    "name": "EnableSmartScreenDropdown",
+                    "displayName": "Pick one of the following settings: (Device)",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_enablesmartscreendropdown_block",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "10.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.19041.1202",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "holographicForBusiness",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_enablesmartscreendropdown_block",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Warn and prevent bypass",
+                            "displayName": "Warn and prevent bypass",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "Block"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_enablesmartscreendropdown_warn",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Warn",
+                            "displayName": "Warn",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "Warn"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_admx_windowsexplorer_enablesmartscreen"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Notify Malicious",
+                        "Web Threat Defense",
+                        "Enhanced Phishing Protection"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/WebThreatDefense/NotifyMalicious",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious",
+                    "categoryId": "20b71dc7-cf08-4534-9e52-d297dd071ca5",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious",
+                    "description": "Configures Enhanced Phishing Protection notifications for malicious content.",
+                    "helpText": "",
+                    "name": "NotifyMalicious",
+                    "displayName": "Notify Malicious",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22621",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious_0",
+                            "description": "Disabled",
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_notifymalicious_1",
+                            "description": "Enabled",
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Notify Password Reuse",
+                        "Web Threat Defense",
+                        "Enhanced Phishing Protection"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/WebThreatDefense/NotifyPasswordReuse",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse",
+                    "categoryId": "20b71dc7-cf08-4534-9e52-d297dd071ca5",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse",
+                    "description": "Configures Enhanced Phishing Protection notifications for protecting passwords from reuse.",
+                    "helpText": "",
+                    "name": "NotifyPasswordReuse",
+                    "displayName": "Notify Password Reuse",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22621",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse_0",
+                            "description": "Disabled",
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_notifypasswordreuse_1",
+                            "description": "Enabled",
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Notify Unsafe App",
+                        "Web Threat Defense",
+                        "Enhanced Phishing Protection"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/WebThreatDefense/NotifyUnsafeApp",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp",
+                    "categoryId": "20b71dc7-cf08-4534-9e52-d297dd071ca5",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp",
+                    "description": "Configures Enhanced Phishing Protection notifications for protecting passwords typed into M365 Office applications, Notepad, and Wordpad.",
+                    "helpText": "",
+                    "name": "NotifyUnsafeApp",
+                    "displayName": "Notify Unsafe App",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22621",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp_0",
+                            "description": "Disabled",
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_notifyunsafeapp_1",
+                            "description": "Enabled",
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled_1",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "Service Enabled",
+                        "Web Threat Defense",
+                        "Enhanced Phishing Protection"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/WebThreatDefense/ServiceEnabled",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled",
+                    "categoryId": "20b71dc7-cf08-4534-9e52-d297dd071ca5",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled",
+                    "description": "Enables Enhanced Phishing Protection in audit mode for Windows 11 H2.",
+                    "helpText": "",
+                    "name": "ServiceEnabled",
+                    "displayName": "Service Enabled",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled_1",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22621",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled_0",
+                            "description": "Disabled",
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_webthreatdefense_serviceenabled_1",
+                            "description": "Enabled",
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
