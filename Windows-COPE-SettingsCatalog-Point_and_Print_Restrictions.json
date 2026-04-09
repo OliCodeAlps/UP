@@ -1,0 +1,989 @@
+﻿{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('19a3cc81-ef99-4bbf-aeb1-221859d69a6a')/settings(settingDefinitions())",
+    "@odata.count": 3,
+    "value": [
+        {
+            "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators_0",
+                    "children": []
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "RestrictDriverInstallationToAdministrators",
+                        "Limits print driver installation to Administrators",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-printers#printers-restrictdriverinstallationtoadministrators"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/Printers/RestrictDriverInstallationToAdministrators",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators",
+                    "description": "\r\nDetermines whether users that aren't Administrators can install print drivers on this computer.\r\n\r\nBy default, users that aren't Administrators can't install print drivers on this computer.\r\n\r\nIf you enable this setting or do not configure it, the system will limit installation of print drivers to Administrators of this computer.\r\n\r\nIf you disable this setting, the system won't limit installation of print drivers to this computer.\r\n        ",
+                    "helpText": "",
+                    "name": "RestrictDriverInstallationToAdministrators",
+                    "displayName": "Limits print driver installation to Administrators",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "11.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.22621",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_restrictdriverinstallationtoadministrators_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_packagepointandprintserverlist_edit",
+                            "settingInstanceTemplateReference": null,
+                            "auditRuleInformation": null,
+                            "simpleSettingCollectionValue": [
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "pdgr-print"
+                                },
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "pdgr-print.pdgr-ch.dir"
+                                },
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "svr700010067"
+                                },
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "svr700010067.pdgr-ch.dir"
+                                },
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "pdgr-printers"
+                                },
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "pdgr-printers.pdgr-ch.dir"
+                                },
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "svr700010053"
+                                },
+                                {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "svr700010053.pdgr-ch.dir"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "PackagePointAndPrintServerList_Win7",
+                        "Package Point and print - Approved servers",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/ADMX_Printing/PackagePointAndPrintServerList_Win7",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_packagepointandprintserverlist_edit",
+                    "description": null,
+                    "helpText": "",
+                    "name": "PackagePointAndPrintServerList_Edit",
+                    "displayName": "Enter fully qualified server names (Device)",
+                    "version": "639094788176414916",
+                    "defaultValue": null,
+                    "maximumCount": 1000,
+                    "minimumCount": 1,
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "10.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.19041.1202",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "holographicForBusiness",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "valueDefinition": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                        "format": "none",
+                        "inputValidationSchema": null,
+                        "maximumLength": 2048,
+                        "minimumLength": 0,
+                        "isSecret": false,
+                        "fileTypes": []
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_1",
+                            "parentSettingId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "none",
+                    "keywords": [
+                        "PackagePointAndPrintServerList_Win7",
+                        "Package Point and print - Approved servers",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers",
+                        "Machine",
+                        "Software\\Policies\\Microsoft\\Windows NT\\Printers\\PackagePointAndPrint",
+                        "PackagePointAndPrintServerList"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-admx-printing#admx-printing-packagepointandprintserverlist-win7"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/ADMX_Printing/PackagePointAndPrintServerList_Win7",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7",
+                    "description": "Restricts package point and print to approved servers.\r\n\r\nThis policy setting restricts package point and print connections to approved servers. This setting only applies to Package Point and Print connections, and is completely independent from the \"Point and Print Restrictions\" policy that governs the behavior of non-package point and print connections.\r\n\r\nWindows Vista and later clients will attempt to make a non-package point and print connection anytime a package point and print connection fails, including attempts that are blocked by this policy. Administrators may need to set both policies to block all print connections to a specific print server.\r\n\r\nIf this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.\r\n\r\nIf this setting is disabled, or not configured, package point and print will not be restricted to specific print servers.\r\n ",
+                    "helpText": "",
+                    "name": "PackagePointAndPrintServerList_Win7",
+                    "displayName": "Package Point and print - Approved servers",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "10.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.19041.1202",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "holographicForBusiness",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 1,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_admx_printing_packagepointandprintserverlist_win7_packagepointandprintserverlist_edit",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                    "settingValueTemplateReference": null,
+                    "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                    "children": [
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_edit",
+                            "settingInstanceTemplateReference": null,
+                            "auditRuleInformation": null,
+                            "simpleSettingValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "svr700010053;svr700010053.pdgr-ch.dir;svr700010067;svr700010067.pdgr-ch.dir;pdgr-print;pdgr-print.pdgr-ch.dir;pdgr-printers;pdgr-printers.pdgr-ch.dir"
+                            }
+                        },
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk",
+                            "settingInstanceTemplateReference": null,
+                            "auditRuleInformation": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk_1",
+                                "children": []
+                            }
+                        },
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk",
+                            "settingInstanceTemplateReference": null,
+                            "auditRuleInformation": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk_1",
+                                "children": []
+                            }
+                        },
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum",
+                            "settingInstanceTemplateReference": null,
+                            "auditRuleInformation": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum_1",
+                                "children": []
+                            }
+                        },
+                        {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                            "settingDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum",
+                            "settingInstanceTemplateReference": null,
+                            "auditRuleInformation": null,
+                            "choiceSettingValue": {
+                                "settingValueTemplateReference": null,
+                                "value": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum_2",
+                                "children": []
+                            }
+                        }
+                    ]
+                }
+            },
+            "settingDefinitions": [
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "PointAndPrint_Restrictions_Win7",
+                        "Point and Print Restrictions",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/Printers/PointAndPrintRestrictions",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum",
+                    "description": "",
+                    "helpText": "",
+                    "name": "PointAndPrint_NoWarningNoElevationOnInstall_Enum",
+                    "displayName": "When installing drivers for a new connection: (Device)",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.15063",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Show warning and elevation prompt",
+                            "displayName": "Show warning and elevation prompt",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "0"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Do not show warning or elevation prompt",
+                            "displayName": "Do not show warning or elevation prompt",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "1"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "PointAndPrint_Restrictions_Win7",
+                        "Point and Print Restrictions",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/Printers/PointAndPrintRestrictions",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum",
+                    "description": "",
+                    "helpText": "",
+                    "name": "PointAndPrint_NoWarningNoElevationOnUpdate_Enum",
+                    "displayName": "When updating drivers for an existing connection: (Device)",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.15063",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Show warning and elevation prompt",
+                            "displayName": "Show warning and elevation prompt",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "0"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Show warning only",
+                            "displayName": "Show warning only",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "1"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum_2",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Do not show warning or elevation prompt",
+                            "displayName": "Do not show warning or elevation prompt",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": "2"
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "PointAndPrint_Restrictions_Win7",
+                        "Point and Print Restrictions",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [
+                        "https://docs.microsoft.com/windows/client-management/mdm/policy-csp-printers#printers-pointandprintrestrictions"
+                    ],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/Printers/PointAndPrintRestrictions",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "description": "This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.\r\n\r\n          If you enable this policy setting:\r\n          -Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.\r\n          -You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.\r\n\r\n          If you do not configure this policy setting:\r\n          -Windows Vista client computers can point and print to any server.\r\n          -Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.\r\n          -Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.\r\n          -Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.\r\n\r\n          If you disable this policy setting:\r\n          -Windows Vista client computers can create a printer connection to any server using Point and Print.\r\n          -Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.\r\n          -Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.\r\n          -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.\r\n          -The \"Users can only point and print to computers in their forest\" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).",
+                    "helpText": "",
+                    "name": "PointAndPrint_Restrictions_Win7",
+                    "displayName": "Point and Print Restrictions",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.15063",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Disabled",
+                            "displayName": "Disabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "Enabled",
+                            "displayName": "Enabled",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [],
+                            "dependedOnBy": [
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk",
+                                    "required": true
+                                },
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_edit",
+                                    "required": true
+                                },
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk",
+                                    "required": true
+                                },
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationoninstall_enum",
+                                    "required": true
+                                },
+                                {
+                                    "dependedOnBy": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_nowarningnoelevationonupdate_enum",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "PointAndPrint_Restrictions_Win7",
+                        "Point and Print Restrictions",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/Printers/PointAndPrintRestrictions",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "default",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_edit",
+                    "description": "",
+                    "helpText": "",
+                    "name": "PointAndPrint_TrustedServers_Edit",
+                    "displayName": "Enter fully qualified server names separated by semicolons (Device)",
+                    "version": "639094788176414916",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.15063",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "valueDefinition": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+                        "format": "none",
+                        "inputValidationSchema": null,
+                        "maximumLength": 8192,
+                        "minimumLength": 0,
+                        "isSecret": false,
+                        "fileTypes": []
+                    },
+                    "defaultValue": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                        "settingValueTemplateReference": null,
+                        "value": null
+                    },
+                    "dependentOn": [
+                        {
+                            "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                            "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                        }
+                    ],
+                    "dependedOnBy": []
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "PointAndPrint_Restrictions_Win7",
+                        "Point and Print Restrictions",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/Printers/PointAndPrintRestrictions",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk",
+                    "description": "",
+                    "helpText": "",
+                    "name": "PointAndPrint_TrustedServers_Chk",
+                    "displayName": "Users can only point and print to these servers: (Device)",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.15063",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "False",
+                            "displayName": "False",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedservers_chk_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "True",
+                            "displayName": "True",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                },
+                {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingDefinition",
+                    "accessTypes": "add,delete,get,replace",
+                    "keywords": [
+                        "PointAndPrint_Restrictions_Win7",
+                        "Point and Print Restrictions",
+                        "\\Printers",
+                        "Administrative Templates\\Printers",
+                        "Printers"
+                    ],
+                    "infoUrls": [],
+                    "baseUri": "./Device/Vendor/MSFT/Policy",
+                    "offsetUri": "/Config/Printers/PointAndPrintRestrictions",
+                    "rootDefinitionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions",
+                    "categoryId": "2becddf1-d8ea-49ec-8560-c8c401faa9bb",
+                    "settingUsage": "configuration",
+                    "uxBehavior": "toggle",
+                    "visibility": "settingsCatalog,template",
+                    "riskLevel": "low",
+                    "id": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk",
+                    "description": "",
+                    "helpText": "",
+                    "name": "PointAndPrint_TrustedForest_Chk",
+                    "displayName": "Users can only point and print to machines in their forest (Device)",
+                    "version": "639094788176414916",
+                    "defaultOptionId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk_0",
+                    "applicability": {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+                        "description": null,
+                        "platform": "windows10",
+                        "deviceMode": "none",
+                        "technologies": "mdm",
+                        "configurationServiceProviderVersion": "5.0",
+                        "maximumSupportedVersion": null,
+                        "minimumSupportedVersion": "10.0.15063",
+                        "windowsSkus": [
+                            "windowsEnterprise",
+                            "windowsProfessional",
+                            "windowsEducation",
+                            "windowsMultiSession",
+                            "iotEnterprise",
+                            "windowsCloudN",
+                            "windows11SE",
+                            "iotEnterpriseSEval"
+                        ],
+                        "requiresAzureAd": false,
+                        "requiredAzureAdTrustType": "none"
+                    },
+                    "occurrence": {
+                        "minDeviceOccurrence": 0,
+                        "maxDeviceOccurrence": 1
+                    },
+                    "referredSettingInformationList": [],
+                    "options": [
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk_0",
+                            "description": null,
+                            "helpText": null,
+                            "name": "False",
+                            "displayName": "False",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 0
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        },
+                        {
+                            "itemId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_pointandprint_trustedforest_chk_1",
+                            "description": null,
+                            "helpText": null,
+                            "name": "True",
+                            "displayName": "True",
+                            "optionValue": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                "settingValueTemplateReference": null,
+                                "value": 1
+                            },
+                            "dependentOn": [
+                                {
+                                    "dependentOn": "device_vendor_msft_policy_config_printers_pointandprintrestrictions_1",
+                                    "parentSettingId": "device_vendor_msft_policy_config_printers_pointandprintrestrictions"
+                                }
+                            ],
+                            "dependedOnBy": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
